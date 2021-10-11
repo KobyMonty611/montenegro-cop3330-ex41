@@ -1,0 +1,20 @@
+@startuml
+
+'App calls NameFunctions to perform it's functions.'
+'Sorting will happen in App.'
+class App
+{
+    +void main()
+}
+
+'NameFunctions performs the reading and writing.'
+class NameFunctions
+{
+    'Functions'
+    +ArrayList<String> readNames()
+    +void outputNames()
+}
+
+App o--> NameFunctions
+
+@enduml
